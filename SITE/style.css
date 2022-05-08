@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.mobile {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #E3E4DB;
+
+}
+
+header {
+  background: #464D5C;
+  padding: 10px 0;
+}
+
+.image_mob {
+  margin-left: 20px;
+  width: 100%;
+  display: flex;
+}
+
+.image_mob img {
+  width: 30%;
+  height: 30%;
+  margin-right: auto;
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+}
+
+nav ul {
+  font-size: 1rem;
+  width: 100%;
+  margin-right: 3%;
+  margin-left: 3%;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+}
+
+nav ul li a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.icons {
+  cursor: pointer;
+  display: flex;
+  margin-left: 5%;
+  font-size: 1.4rem;
+  gap: 50px;
+}
+
+.img img {
+  width: 100%;
+}
+
+.butns {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.but {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  background: #B89068;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.main {
+  text-align: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.src {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.src form {
+  padding-top: 80px;
+  width: 60%;
+}
+
+.src form input {
+  padding-left: 10px;
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid gray;
+  margin: 0;
+  width: 80%;
+  height: 35px;
+}
+
+.src form button {
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  left: -20px;
+  border: 1px solid gray;
+  margin: 0;
+  width: 7%;
+  height: 100%;
+}
+#proh2{
+  margin-top: 30px;
+  text-align: center;
+}
+.produse{
+  grid-gap: 3em;
+  display: grid ;
+  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+  padding: 10px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  margin-top: 30px;
+}
+.produse ul{
+  width:fit-content;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0 10px;
+  outline:1px solid #464D5C;
+  max-height: 500px;
+}
+ul p form{
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+.prodim{
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+.scri{
+  font-size:0.85rem;
+  padding: 0px 20px;
+  text-align: center;
+}
+.scri a{
+  
+  text-decoration: none;
+  color: #464D5C;
+}
+.red{
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.reducere{
+  font-size: 0.92rem;
+  text-decoration: line-through;
+}
+.pret{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+sup {
+  line-height: 0;
+  font-size: 10px;
+}
+.addtocart{
+  justify-self: center;
+  margin: 20px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 0.7rem 2.3rem;
+  position: relative;
+  border-radius: 5px;
+  letter-spacing: 0.7px;
+  background-color: #464D5C;
+  color: #fff;
+  font-size: 21px;
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+  box-shadow: rgba(0, 9, 61, 0.2) 0px 4px 8px 0px;
+}
+.addtocart:hover{
+  transform:translateY(2px);
+}
+header i{
+  margin-right:10px;
+}
+.produs form{
+  height: auto;
+  margin: 20px 0;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+
+  justify-content: center;
+}
+.butt{
+  height: 100%;
+}
+@media screen and (max-width: 550px){
+  .produse{
+    display: grid ;
+    gap: 20px 5px;
+    padding: 0;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+  }
+  .produse ul{
+    padding: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .addtocart{
+    width: max-content  ;
+    font-size: 13px;
+    border-radius: 0;
+  }
+  .produs form{
+    margin-bottom: 0;
+  }
+  .prod_img{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .prod_img img{
+    width:71%;
+    max-height: 150px;
+    height:fit-content;
+    margin-bottom: 20px;
+  }
+  .src {
+    display: none;
+  }
+
+  #ion {
+    transition: all 2s ease-in;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    display: none;
+    padding: 10px;
+    height: 30px;
+  }
+
+  #ion form {
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #ion form button {
+    -webkit-appearance: none;
+    display: flex;
+    font-size: 1rem;
+    height: 100%;
+    padding-left: 14px;
+    padding-right: 14px;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #srch {
+    -webkit-appearance: none;
+    border-radius: 1px;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .but {
+    font-size: 1.3rem;
+    width: 60px;
+    height: 60px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .mob {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 2s ease-out;
+  }
+
+  .mob button {
+    margin-right: auto;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .dropdown {
+    display: none;
+    background: rgba(12, 8, 8, 0.881);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80%;
+  }
+
+  .dropdown ul {
+    position: fixed;
+    list-style: none;
+  }
+
+  .dropdown button {
+    color: black;
+    border: none;
+    background: none;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-right: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .und {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid white;
+  }
+
+  .icons {
+    margin-right: 20px;
+  }
+
+  .icons ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .icons li {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 30px;
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  .icons li i {
+    color: white;
+  }
+
+  .dropdown a {
+    text-decoration: none;
+    color: white;
+    scroll-behavior: smooth;
+  }
+
+  .exit {
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20%;
+  }
+
+  .imaginatie {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .butns {
+    flex-wrap: wrap;
+  }
+
+  .main {
+    outline: 1px solid #e1e1e1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+}
